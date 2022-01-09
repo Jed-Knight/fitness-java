@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".homePage">
+
+    <TextView
+        android:id="@+id/txtLogo6"
+        android:layout_width="458dp"
+        android:layout_height="92dp"
+        android:background="@color/colorPrimary"
+        android:text="GetFit"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ImageView
+        android:id="@+id/imgBMR"
+        android:layout_width="181dp"
+        android:layout_height="133dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogo6"
+        app:layout_constraintVertical_bias="0.073"
+        app:srcCompat="@drawable/bmrcalc" />
+
+    <ImageView
+        android:id="@+id/imgSettings"
+        android:layout_width="184dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfile"
+        app:layout_constraintVertical_bias="0.32"
+        app:srcCompat="@drawable/settings_icon_png_settings_icon_blue" />
+
+    <ImageView
+        android:id="@+id/imgBMI"
+        android:layout_width="199dp"
+        android:layout_height="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogo6"
+        app:layout_constraintVertical_bias="0.071"
+        app:srcCompat="@drawable/bmi" />
+
+    <ImageView
+        android:id="@+id/imgGallery"
+        android:layout_width="183dp"
+        android:layout_height="131dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.995"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBMR"
+        app:layout_constraintVertical_bias="0.153"
+        app:srcCompat="@drawable/focus" />
+
+    <ImageView
+        android:id="@+id/imgProgress"
+        android:layout_width="179dp"
+        android:layout_height="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgGallery"
+        app:layout_constraintVertical_bias="0.125"
+        app:srcCompat="@drawable/greenprog" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="406dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="464dp"
+        android:background="@color/colorPrimary"
+        android:text="Logout"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogo6"
+        app:layout_constraintVertical_bias="0.943" />
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="180dp"
+        android:layout_height="146dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBMI"
+        app:layout_constraintVertical_bias="0.139"
+        app:srcCompat="@drawable/prof" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

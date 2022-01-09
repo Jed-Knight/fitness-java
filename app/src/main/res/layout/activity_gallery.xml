@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".Gallery">
+
+  <Button
+      android:id="@+id/btnSupper"
+      android:layout_width="245dp"
+      android:layout_height="90dp"
+      android:background="@color/colorPrimaryDark"
+      android:text="Supper"
+      android:textAlignment="center"
+      android:textColor="@color/common_google_signin_btn_text_dark_default"
+      android:textSize="30sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnLunch"
+      app:layout_constraintVertical_bias="0.178" />
+
+  <Button
+      android:id="@+id/btnLunch"
+      android:layout_width="245dp"
+      android:layout_height="90dp"
+      android:background="@color/colorPrimaryDark"
+      android:text="Lunch/Dinner"
+      android:textAlignment="center"
+      android:textColor="@color/common_google_signin_btn_text_dark_default"
+      android:textSize="30sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnBreak"
+      app:layout_constraintVertical_bias="0.135" />
+
+  <TextView
+      android:id="@+id/txtLogo7"
+      android:layout_width="458dp"
+      android:layout_height="92dp"
+      android:background="@color/colorPrimary"
+      android:text="GetFit"
+      android:textAlignment="center"
+      android:textColor="@color/colorPrimaryDark"
+      android:textSize="60sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.526"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.022" />
+
+  <Button
+      android:id="@+id/btnBreak"
+      android:layout_width="245dp"
+      android:layout_height="90dp"
+      android:background="@color/colorPrimaryDark"
+      android:text="Breakfast/Brunch"
+      android:textAlignment="center"
+      android:textColor="@color/common_google_signin_btn_text_dark_default"
+      android:textSize="30sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtLogo7"
+      app:layout_constraintVertical_bias="0.175" />
+
+  <Button
+      android:id="@+id/btnHome"
+      android:layout_width="420dp"
+      android:layout_height="69dp"
+      android:background="@color/colorPrimary"
+      android:text="Home"
+      android:textAlignment="center"
+      android:textColor="@color/common_google_signin_btn_text_dark_default"
+      android:textSize="30sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.333"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnSupper"
+      app:layout_constraintVertical_bias="0.963" />
+</androidx.constraintlayout.widget.ConstraintLayout>

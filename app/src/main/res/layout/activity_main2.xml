@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="241dp"
+        android:layout_height="48dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="weight in kg"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etHeight"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <TextView
+        android:id="@+id/txtLogo"
+        android:layout_width="458dp"
+        android:layout_height="92dp"
+        android:background="@color/colorPrimary"
+        android:text="GetFit"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="241dp"
+        android:layout_height="48dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Height in meters"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogo"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <Button
+        android:id="@+id/btnBMI"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="BMI"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResult"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="244dp"
+        android:layout_height="109dp"
+        android:background="@android:color/background_light"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etWeight"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Save BMI"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResult"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="RESET"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResult"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="415dp"
+        android:layout_height="67dp"
+        android:background="@color/colorPrimary"
+        android:text="Home"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSave"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
